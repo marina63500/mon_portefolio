@@ -3,32 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon portefolio</title>
+
+<!-- favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="./assets/images/favicon-48x48.png">
+
+  <title>Mon portefolio | Marina Stollesteiner</title>
   <link rel="stylesheet" href="./assets/styles/style.css">
-  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="./assets/styles/responsive.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+  
+   <script src="./assets/scripts/menu.js"  defer></script>
+  
 </head>
-<body>
-  <header>
-    <nav>
-      <div class="container-header">
-        <div class="logo"></div>
-        <h1>Marina</h1>
-      </div>
-      <div>
-        
-      </div>
-    </nav>
+
+<body >
+  <header class="banner"> 
+     
+   
+    <nav class="nav" id="navbar">
+      <div class="nav-header">
+        <div class="header-main">          
+          <div class="img-logo">
+            <img src="assets/images/logo.png" alt="logo">
+          </div>
+          <h1>PORTEFOLIO</h1> 
+               <!-- div burger -->
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>         
+        </div> 
+
+       
+
+        <div class="header-icon center">
+            <div class="icon center" >
+              <a href="#" target="_blank"><i class="fa-solid fa-phone-flip fa-2x"></i></a>
+            </div>
+            <div class="icon center">
+              <a href="https://www.linkedin.com/in/marina-stollesteiner/" target="_blank"><i class="fa-brands fa-square-linkedin fa-2x"></i></a>
+            </div>
+            <div class="icon center">  
+              <a href="https://github.com/marina63500" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+            </div>
+            <div class="icon center toggle" id="toggle">
+              <i class="fa-solid fa-sun fa-2x"></i>
+              <i class="fa-solid fa-moon fa-2x"></i>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="nav-links">
+          <ul class="list-links">
+            <li><a   href="#accueil"><i class="fa-solid fa-house-chimney"></i>Accueil</a></li>
+            <li><a href="#apropos"><i class="fa-solid fa-user"></i>À propos</a></li>
+            <li><a href="#projets"><i class="fa-solid fa-code"></i>Projets</a></li>
+            <li><a href="#competences"><i class="fa-solid fa-graduation-cap"></i>Compétences</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a></li>
+          </ul>
+        </div>
+      </div>     
+      
+    </nav> 
+   
+    <div class="presentation">
+      <div class="presentation-content">
+        <h2 class="presentation-title">Bonjour, je m'appelle<span> Marina Stollesteiner</span></h2>
+        <p class="presentation-subtitle">je suis <span id="typing"></span></p>
+      </div> 
+    </div>
     
-    <ul>
-      <li><a href="#accueil"><i class="fa-solid fa-house-chimney"></i>Accueil</a></li>
-      <li><a href="#apropos"><i class="fa-solid fa-user"></i>À propos</a></li>
-      <li><a href="#projets"><i class="fa-solid fa-code"></i>Projets</a></li>
-      <li><a href="#competences"><i class="fa-solid fa-graduation-cap"></i>Compétences</a></li>
-      <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a></li>
-    </ul>
-  
   </header>
+
+  <!-- section -->
+  <main>
+    <section class="about">
+      <h2 class="section-title" id="apropos"><span>À propos de moi</span></h2>
+      <div class="about-content">
+        <div class="about-img">
+          <img src="assets/images/photo_profil.jpg" alt="photo de profil">
+        </div>
+        <div class="about-text">
+          <p>Je suis Marina Stollesteiner, une développeuse web passionnée par la création d'expériences numériques innovantes et conviviales. Avec une solide formation en développement web et une expérience pratique dans divers projets, je m'efforce de concevoir des sites web attrayants et fonctionnels qui répondent aux besoins des utilisateurs.</p>
+          <p>Mon expertise couvre un large éventail de technologies, notamment HTML, CSS, JavaScript, ainsi que des frameworks populaires tels que React et Vue.js. Je suis également compétente en back-end avec Node.js et Express, ce qui me permet de créer des applications web complètes et performantes.</p>
+          <p>En plus de mes compétences techniques, je suis une communicante efficace et une collaboratrice enthousiaste. J'aime travailler en équipe pour résoudre des problèmes complexes et trouver des solutions créatives. Mon objectif est de continuer à apprendre et à évoluer dans le domaine du développement web tout en contribuant à des projets passionnants.</p>
+        </div>
+      </div>
+    </section>
+  </main>
   
-  
+ 
 </body>
 </html>
