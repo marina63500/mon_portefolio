@@ -1,11 +1,10 @@
 # Portfolio de Marina Stollesteiner
 
----
 
 ## 1_ À propos de moi
-Je suis **Marina Stollesteiner**, développeuse web junior passionnée par le développement front-end et back-end.  
-J’apprends de manière autonome via des tutoriels, cours en ligne (Udemy), documentation officielle et projets pratiques.  
-Ce portfolio présente mes réalisations et compétences techniques.
+Je suis **Marina Stollesteiner**, développeuse web et web mobile junior .J'aime le développement front-end et back-end.  
+Je continu d'apprendre de manière autonome via des tutoriels, cours en ligne (Udemy), documentation officielle et projets pratiques.  
+Ce portfolio présente quelques réalisations faite au cours de ma formation et  mes compétences techniques.
 
 
 
@@ -19,7 +18,9 @@ Ce portfolio présente mes réalisations et compétences techniques.
 
 
 ## 3_ Fonctionnalités principales
-- Présentation de 4 de mes projets web réalisés au cours de formation développeur web et web mobile avec liens vers le code et les sites en ligne  
+
+- Présentation de 4 de mes projets web réalisés au cours de formation développeur web et web mobile avec liens vers le code et les sites en ligne 
+
 - Formulaire de contact sécurisé :
     - Validation des champs (nom, email, message)  
     - CAPTCHA mathématique pour éviter les envois automatisés  
@@ -46,8 +47,10 @@ portfolio/
 - READMe.md
 
 ## 5_ Lien vers site en ligne
+
   -
 
 ## 6_ Contact
+
   - Email : marinastollesteiner@gmail.com
 
