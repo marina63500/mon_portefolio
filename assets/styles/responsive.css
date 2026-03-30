@@ -1,24 +1,15 @@
+
 /* responsive */
+
 @media (max-width: 960px) {
-  h1{
-    font-size: 2.5rem;     
-  }
-
   .header-main img{
-  width: 80px;
-  height: 80px;
-  
+    width: 80px;
+    height: 80px;  
   }
-
-  .nav{  
-    min-width: 100%;
-    /* align-items: center;
-    justify-content: center;     */
-  }
-
+ 
   .header-main{
-   min-width: 100%;
-   justify-content: space-between;
+    min-width: 100%;
+    justify-content: space-between;
   }
 
   .burger {
@@ -29,16 +20,38 @@
     display: none;
   }
 
-  .nav-links { 
-    display: none; 
-    background: var(--section);       
-    width: 100%;       
+  .nav-links{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 0;
   }
 
   .nav-links.active {
-    display: flex;    
-    align-items: center;
-    justify-content: center;    
+    display: flex;
+  }
+
+  /* section about */
+  .container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:40px;
+  align-items: center;
+  }
+
+  /* section contact */
+  .contact-content{    
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .contact-info{    
+    margin-bottom: 50px;
+  }
+
+  /* footer */
+  .footer-links ul{
+  display:none;
   }
 }
 
@@ -48,8 +61,6 @@
   .nav{               
     flex-direction: column;
   }
-
-
  
   .header-main img{
   width: 60px;
@@ -57,42 +68,78 @@
   }
 
   .list-links{
-    gap: 5px;
+    gap: 20px;
     flex-direction: column;   
     margin:0; 
   }
   .list-links li{
     font-size: 1rem;
-  }
- 
+  } 
 
-  /* .list-links li a{
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
+  /* footer */
+  .footer-content{
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+ 
 }
 
-@media (max-width: 466px) {
-  h1{
-    font-size: 1.5rem; 
-  }
 
-  .nav{               
-    height: auto;
-    padding-bottom: 10px; 
-  }
-  .header-main img{
+
+@media (max-width: 466px) {
+ .header-main img{
   width: 50px;
   height: 50px;
   }
+
+  /* section contact */
+ .contact-info{ 
+ justify-content: flex-start;
+    
+  }
  
 }
 
-/*  css main */
+@media (max-width: 425px) {
+  .contact{
+    padding: 10px;
+  }
 
-.about{
-  width: 500px;
-  height: 300px;
+  .contact p{
+    margin: 20px;
+    text-align:justify ;
+    
+  }
+
+    .contact-info{    
+   width: 100%;
+   font-size: 0.9rem;
+  } 
+  
 }
+
+
+
+/* responsive cards */
+
+@media (min-width: 540px) {
+  .cards{
+    grid-template-columns: repeat(2,1fr);    
+  }
+}
+
+
+@media (min-width: 960px) {
+  .cards{
+    grid-template-columns: repeat(4,1fr);    
+  }
+}
+
+
+/* ********** responsive footer **********************/
+
+
+
+/* ************** responsive meteo *********************/

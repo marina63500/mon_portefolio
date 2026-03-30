@@ -3,23 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Marina Stollesteiner, développeuse web. Découvrez mes projets, compétences et téléchargez mon CV.">
+
 
 <!-- favicon -->
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="./assets/images/favicon-48x48.png">
-
   <title>Mon portefolio | Marina Stollesteiner</title>
+
+  <!-- lien css -->
   <link rel="stylesheet" href="./assets/styles/style.css">
   <link rel="stylesheet" href="./assets/styles/responsive.css">
   <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
   
+
+    <!-- lien cdn de emailJS pour le formulaire de contact -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <!-- lien js -->
    <script src="./assets/scripts/menu.js"  defer></script>
-  
+   <script src="./assets/scripts/slider.js" defer></script>
+   <script src="./assets/scripts/form.js" defer></script>
+
+   
 </head>
 
 <body >
-  <header class="banner"> 
+  <header class="banner" id="accueil"> 
      
    
     <nav class="nav" id="navbar">
@@ -41,7 +51,7 @@
 
         <div class="header-icon center">
             <div class="icon center" >
-              <a href="#" target="_blank"><i class="fa-solid fa-phone-flip fa-2x"></i></a>
+              <a href="#contact"><i class="fa-solid fa-phone-flip fa-2x"></i></a>
             </div>
             <div class="icon center">
               <a href="https://www.linkedin.com/in/marina-stollesteiner/" target="_blank"><i class="fa-brands fa-square-linkedin fa-2x"></i></a>
@@ -57,9 +67,9 @@
         </div>
         </div>
 
-        <div class="nav-links">
+        <div class="nav-links" >
           <ul class="list-links">
-            <li><a   href="#accueil"><i class="fa-solid fa-house-chimney"></i>Accueil</a></li>
+            <li><a href="#accueil"><i class="fa-solid fa-house-chimney"></i>Accueil</a></li>
             <li><a href="#apropos"><i class="fa-solid fa-user"></i>À propos</a></li>
             <li><a href="#projets"><i class="fa-solid fa-code"></i>Projets</a></li>
             <li><a href="#competences"><i class="fa-solid fa-graduation-cap"></i>Compétences</a></li>
@@ -70,32 +80,276 @@
       
     </nav> 
    
-    <div class="presentation">
-      <div class="presentation-content">
-        <h2 class="presentation-title">Bonjour, je m'appelle<span> Marina Stollesteiner</span></h2>
+    <div class="presentation" >
+      <div class="presentation-content" >
+        <h2  class="presentation-title">Bonjour, je m'appelle<span> Marina Stollesteiner</span></h2>
         <p class="presentation-subtitle">je suis <span id="typing"></span></p>
+        <a href="#apropos" class="btn">En savoir plus</a>
       </div> 
+      
     </div>
     
   </header>
 
-  <!-- section -->
+  <!-- section  a propos-->
   <main>
-    <section class="about">
-      <h2 class="section-title" id="apropos"><span>À propos de moi</span></h2>
-      <div class="about-content">
+    <section class="about" id="apropos">
+      <h2 class="title" >À propos de moi</h2>
+      <div class="container">
         <div class="about-img">
-          <img src="assets/images/photo_profil.jpg" alt="photo de profil">
+          <!-- <img src="assets/images/photo_profil.jpg" alt="photo de profil"> -->
+            
         </div>
         <div class="about-text">
-          <p>Je suis Marina Stollesteiner, une développeuse web passionnée par la création d'expériences numériques innovantes et conviviales. Avec une solide formation en développement web et une expérience pratique dans divers projets, je m'efforce de concevoir des sites web attrayants et fonctionnels qui répondent aux besoins des utilisateurs.</p>
-          <p>Mon expertise couvre un large éventail de technologies, notamment HTML, CSS, JavaScript, ainsi que des frameworks populaires tels que React et Vue.js. Je suis également compétente en back-end avec Node.js et Express, ce qui me permet de créer des applications web complètes et performantes.</p>
+          <p>Je suis Marina Stollesteiner, une développeuse web qui aime la création d'expériences numériques innovantes et conviviales. Avec une formation en développement web  et une expérience pratique dans divers projets, je m'efforce de concevoir des sites web attrayants et fonctionnels qui répondent aux besoins des utilisateurs.</p>
+          <p>Mon expertise couvre un large éventail de technologies, notamment HTML, CSS, JavaScript, ainsi que des frameworks populaires tels que React . Je suis également compétente en back-end avec PHP et symfony, ce qui me permet de créer des applications web complètes et performantes.</p>
           <p>En plus de mes compétences techniques, je suis une communicante efficace et une collaboratrice enthousiaste. J'aime travailler en équipe pour résoudre des problèmes complexes et trouver des solutions créatives. Mon objectif est de continuer à apprendre et à évoluer dans le domaine du développement web tout en contribuant à des projets passionnants.</p>
+        </div>        
+      </div>
+
+      <div>
+        <a href="./assets/images/cv/CV_marina Stollesteiner.pdf" class="btn" id="button" target="_blank" download="">Télécharger mon CV</a>
+      </div>
+    </section>
+
+
+    <!-- section compétences -->
+
+    <section class="skills" id="competences" >
+      <h2 class="title" >Compétences</h2>
+      <p>Outils et technologies que j'utilise</p>
+
+      <div class="skills-slider">
+        <div class="skills-list" >
+          <div class="skill html" data-color="#E44D26">            
+              <img src="./assets/images/icons/html-color.svg" alt="html logo" />
+              <!-- <span>HTML5</span> -->
+             
+          </div>
+            <div class="skill css " data-color="#264DE4">
+              <img src="./assets/images/icons/css-color.svg" alt="css logo" />
+              <!-- <span>CSS3</span> -->
+            </div>
+            <div class="skill sass  " data-color="#CD6799">
+              <img src="./assets/images/icons/sass-color.svg" alt="sass logo" />
+              <!-- <span>Sass</span> -->
+            </div>
+            <div class="skill js" data-color="#f7df1e">
+              <img src="./assets/images/icons/javascript-color.svg" alt="javascript logo" />
+              <!-- <span>JavaScript</span> -->
+            </div>
+             <div class="skill react" data-color="#00D8FF">
+              <img src="./assets/images/icons/react-color.svg" alt="react logo" />
+              <!-- <span>React</span> -->
+            </div>
+            <div class="skill php" data-color="#4C6B97">
+              <img src="./assets/images/icons/php-color.svg" alt="php logo" />
+              <!-- <span>PHP</span> -->
+            </div>
+            <div class="skill symfony" data-color="#1A171B">
+              <img src="./assets/images/icons/symfony-color.svg" alt="symfony logo" />
+              <!-- <span>Symfony</span> -->
+            </div>
+            <div class="skill mysql" data-color="#5D87A1">
+              <img src="./assets/images/icons/mysql-color.svg" alt="mysql logo" />
+              <!-- <span>MySQL</span> -->
+            </div>
+           
+            <div class="skill git" data-color="#EE513B">
+              <img src="./assets/images/icons/git-color.svg" alt="git logo" />
+              <!-- <span>Git</span> -->
+            </div>
+            <div class="skill github" data-color="#000000">
+              <img src="./assets/images/icons/github-svgrepo-com.svg" alt="github logo" />
+              <!-- <span>GitHub</span> -->
+            </div>
+            
+            <div class="skill figma " data-color="#0ACF83">
+              <img src="./assets/images/icons/figma-color.svg" alt="figma logo" />
+              <!-- <span>Figma</span> -->
+            </div>  
+        </div> 
+
         </div>
       </div>
     </section>
+
+
+
+    <!--********  section projets *******************-->
+      <section class="projects" id="projets">
+        <h2 class="title" >Projets</h2>
+
+        <div class="projects-intro">
+          <p>Ces projets ont été réalisés au cours de ma formation de développeur web et web mobile et de manière autonome.
+          </p>
+        </div>
+
+        <div class="cards">
+        <!-- projet 1 -->
+          <a href="meteo.html" class="card" target="_blank">            
+              <img class="card-background"
+                    src="./assets/images/app_meteo.jpg" alt="Application météo" >
+              
+            
+              <div class="card-content">
+                <p>projet</p>
+                
+                <h3 class="card-title">Application météo</h3>
+                <!-- <p class="card-description">projet météo utilisant une API pour afficher les prévisions.ce projet a été réalisé en groupe</p> -->                 
+              </div>           
+          </a>
+
+          <!-- projet 2 -->
+          <a href="marmite_ronde.html" class="card" >            
+            
+              <img class="card-background"
+                  src="./assets/images/recettes.jpg" 
+                   alt="Marmite Ronde" >
+
+              <div class="card-content">
+                <p>projet</p>
+                <h3 class="card-title">Marmite Ronde</h3>
+                <!-- <p class="card-description">Réalisation d'un site de recettes de cuisine.</p> -->
+              </div>
+            
+          </a>
+
+          <!-- projet 3 -->
+          <a href="#" class="card" >
+            
+              <img class="card-background"
+                  src="./assets/images/pension-canine.jpg" 
+                   alt="Site pension canine" >
+
+              <div class="card-content">
+                <p>projet</p>
+                <h3 class="card-title">Pension canine</h3>
+                <!-- <p class="card-description">Voici mon projet de fin de formation .</p> -->
+              </div>
+            
+          </a>
+
+
+           <!-- projet 4-->
+          <a href="#" class="card" >
+            
+              <img class="card-background"
+              src="./assets/images/calculator.jpg" alt="Calculatrice" >
+
+              <div class="card-content">
+                <p>projet</p>
+                <h3 class="card-title">Calculatrice</h3>
+                <!-- <p class="card-description">projet en js.</p> -->
+              </div>
+          </a>
+
+        </div>        
+      </section>
+
+
+      <!-- *************section contact *****************-->
+
+      <section class="contact">
+        <h2 class="title" id="contact">Contact</h2>
+        <p>Vous pouvez me contacter via le formulaire de contact, ou directement par téléphone ou  par email.</p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot  "></i>
+              <span>Issoire, France</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone "></i>
+              <span>+33 6 18 93 01 60</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope "></i>
+              <span><a href="mailto:marinastollesteiner@gmail.com">marinastollesteiner@gmail.com</a></span>
+            </div>
+          </div>
+
+          <div class="form">
+            <form id="contact-form">              
+
+              <div class="form-group">
+                <h3>Formulaire de contact</h3>
+                <label for="name">Nom & Prénom</label>
+                <input type="text" id="name" name="name" placeholder=" Ex : jean dupont" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder=" Ex : jean.dupont@gmail.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+              </div>
+
+              <!-- CAPTCHA -->
+               <div class="form-group">
+                <label for="captcha-answer">CAPTCHA</label>
+                <p id="captcha-question"></p>
+                <input type="number" id="captcha-answer" placeholder="Votre réponse" required>
+               </div>
+
+              <button type="submit">Envoyer</button>
+
+            </form>
+            <p id="result-message"></p>
+          </div>
+        
+        </div>
+      </section>
+
+
   </main>
+
+
+  <!-- *******************section footer************************** -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="./assets/images/logo.png" alt="logo" class="footer-logo" height="80" width="80">
+        <h3>Marina stollesteiner</h3>      
+      </div>
+    
+      
+      <div class="footer-right">
+            <div class="icon center" >
+              <a href="https://www.linkedin.com/in/marina-stollesteiner/" target="_blank"><i class="fa-brands fa-square-linkedin fa-2x"></i></a>
+            </div>
+
+            <div class="icon center">  
+              <a href="https://github.com/marina63500" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+            </div>
+      </div>      
+    </div>
+
+    <div class="footer-links">
+      <ul class="nav-links">
+            <li><a href="#accueil"><i class="fa-solid fa-house-chimney"></i>Accueil</a></li>
+            <li><a href="#apropos"><i class="fa-solid fa-user"></i>À propos</a></li>
+            <li><a href="#projets"><i class="fa-solid fa-code"></i>Projets</a></li>
+            <li><a href="#competences"><i class="fa-solid fa-graduation-cap"></i>Compétences</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a></li>
+          </ul>
+    </div>
+
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mon Portefolio. Tous droits réservés.</p>
+    </div>
+  </footer>
   
  
 </body>
 </html>
+
+ 
